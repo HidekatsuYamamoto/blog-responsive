@@ -89,9 +89,25 @@ body {
   align-items: center;
 }
 
+
 @media screen and (min-width: 1080px) {
   .header-nav_link {
+/* 
+Figmaでは静的なデザインのみが表示されており、ホバーアクションなどの動的な要素は実装されていません。
+そのため、ここに示されている数値や表示状態は参考程度のものとなります。
+*/
+    padding-top: 4px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom-color 0.24s;
     color: #fff;
+  }
+}
+
+/* ホバーアクション追加のサンプル */
+@media screen and (min-width: 1080px) {
+  .header-nav_link:hover {
+    border-bottom-color: #fff;
+    transform: translateY(-5px);
   }
 }
 
